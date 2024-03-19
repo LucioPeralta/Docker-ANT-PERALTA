@@ -77,8 +77,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'cabfly',
-        'USER': 'lucio',
-        'PASSWORD': 'luciomysql',
+        'USER': 'itsv',
+        'PASSWORD': 'itsv',
         'HOST': 'db',
         'PORT': '3306',
     }

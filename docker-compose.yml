@@ -16,9 +16,9 @@ services:
     image: mysql
     environment:
       MYSQL_DATABASE: 'cabfly'
-      MYSQL_USER: 'lucio'
-      MYSQL_PASSWORD: 'luciomysql'
-      MYSQL_ROOT_PASSWORD: ''
+      MYSQL_USER: 'itsv'
+      MYSQL_PASSWORD: 'itsv'
+      MYSQL_ROOT_PASSWORD: 'itsv'
     volumes:
       - mysql_data:/var/lib/mysql
 
@@ -28,7 +28,7 @@ services:
       - "8080:80"
     environment:
       PMA_ARBITRARY: 1
-      MYSQL_ROOT_PASSWORD: ''
+      MYSQL_ROOT_PASSWORD: 'itsv'
     depends_on:
       - db
 
